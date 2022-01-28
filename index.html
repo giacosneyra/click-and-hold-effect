@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click And Hold</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>Click And Hold</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore iste dolor nisi minima earum ullam, eligendi delectus explicabo eaque laboriosam optio suscipit accusantium cupiditate voluptate veritatis, voluptas nesciunt assumenda.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore iste dolor nisi minima earum ullam, eligendi delectus explicabo eaque laboriosam optio suscipit accusantium cupiditate voluptate veritatis, voluptas nesciunt assumenda.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore iste dolor nisi minima earum ullam, eligendi delectus explicabo eaque laboriosam optio suscipit accusantium cupiditate voluptate veritatis, voluptas nesciunt assumenda.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore iste dolor nisi minima earum ullam, eligendi delectus explicabo eaque laboriosam optio suscipit accusantium cupiditate voluptate veritatis, voluptas nesciunt assumenda.</p>
+    </section>
+    <div id="cursor"></div>
+    <script type="text/javascript">
+        var cursor = document.getElementById('cursor');
+        window.onmousemove = function(e){
+            var x = e.clientX,
+                y = e.clientY;
+                cursor.style.left = x + 'px';
+                cursor.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
